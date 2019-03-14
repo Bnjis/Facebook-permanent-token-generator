@@ -1,6 +1,6 @@
 # Facebook Permanent Token generator
 
-Create with :love: for my JaycPortutu
+Create with ❤️❤️❤️ for my JaycPortutu
 
 Esay to use, simply add your :
 
