@@ -11,7 +11,8 @@ class Form extends Component {
       app_id: "",
       app_secret: "",
       user_access_token: "",
-      permanent_token: ""
+      permanent_token: "",
+      isError: ""
     };
 
     this.handleChangeApp_id = this.handleChangeApp_id.bind(this);
@@ -35,9 +36,17 @@ class Form extends Component {
 
   handleSubmit(event) {
     const { app_id, app_secret, user_access_token } = this.state;
+
+    if (!app_id || !app_secret || !user_access_token) {
+      alert("Please complete all fields");
+      event.preventDefault();
+      return;
+    }
+
     const API_URL = "https://graph.facebook.com/v3.2";
 
     let obj = { id: "", token: "" };
+    var self = this;
     axios
       .get(
         API_URL +
@@ -71,22 +80,30 @@ class Form extends Component {
               })
               .catch(error => {
                 console.log(error);
+                self.setState({ isError: error.response.data.error.message });
               });
           })
           .catch(error => {
             console.log(error);
+            self.setState({ isError: error.response.data.error.message });
           });
       })
-      .catch(error => {
-        console.log(error);
+      .catch(function(error) {
+        console.log(error.response);
+        self.setState({ isError: error.response.data.error.message });
       });
     event.preventDefault();
   }
 
   render() {
-    const { permanent_token } = this.state;
+    const { permanent_token, isError } = this.state;
     return (
       <div className="form-wrapper">
+        <h1>Facebook PermaToken Generator</h1>
+        <p className="description">
+          Complete the following fields to get your permanent token. The
+          documentation is available on GitHub via the link at the top right
+        </p>
         <form onSubmit={this.handleSubmit} className="access_form">
           <label htmlFor="app_id">
             App ID
@@ -117,6 +134,13 @@ class Form extends Component {
           </label>
           <button>Submit</button>
         </form>
+        {isError !== "" ? (
+          <div className="response error">
+            An error has occured : <strong>{isError}</strong>
+          </div>
+        ) : (
+          ""
+        )}
         {permanent_token !== "" ? (
           <div className="response valide">
             Your permanent token is : <strong>{permanent_token}</strong>
