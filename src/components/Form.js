@@ -8,10 +8,9 @@ class Form extends Component {
     super(props);
 
     this.state = {
-      app_id: "401784187221328",
-      app_secret: "6043ec666aa2329e70bc59a074c27be6",
-      user_access_token:
-        "EAAFta6vBdVABAH0qoRcdyLYSK4ul0huG5BLbZBDCvObxbxm4ZB7BUglbqTSZCsWJLNmVGjUuUoLgrt4vITar2I0SuUDmL13yYDGfnaRWKfHIgDZAz3N8LDXjVMMQ8lnBXzr9SbNZCiauwEZB1fF1WuRTfKGtQZBaQNSXxmy610ZBFa8UyfeISNZC1eWAopiwSavive6R6oWQzkJOy2saQT365V1SghoOSbX5O9IltFaPdygZDZD",
+      app_id: "",
+      app_secret: "",
+      user_access_token: "",
       permanent_token: ""
     };
 
