@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Facebook-permanent-token-generator/precache-manifest.30f4372760c25aa519482f54fb205f81.js"
+  "/Facebook-permanent-token-generator/precache-manifest.a93b6c6e1119e00420a29bb03fc6d7eb.js"
 );
 
 workbox.clientsClaim();
