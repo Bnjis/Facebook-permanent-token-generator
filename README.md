@@ -2,6 +2,8 @@
 
 Create with ❤️❤️❤️ for my JaycPortutu
 
+[Go to the online version](https://bnjis.github.io/Facebook-permanent-token-generator/)
+
 Esay to use, simply add your :
 
 - App_id
