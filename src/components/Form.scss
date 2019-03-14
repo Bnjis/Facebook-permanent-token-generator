@@ -1,0 +1,69 @@
+.form-wrapper {
+  max-width: 500px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #e7e7e7;
+
+  .access_form {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+
+    label {
+      display: block;
+      font-size: 18px;
+      color: #7e7e7e;
+      font-weight: bold;
+      input {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 30px 15px;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        outline: none;
+        text-align: center;
+      }
+    }
+    button {
+      display: block;
+      padding: 20px 40px;
+      max-width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+
+      background-color: #6b81c7;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        background-color: #8c9aca;
+      }
+    }
+  }
+  .response {
+    width: 100%;
+    border-radius: 10px;
+    padding: 50px;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    &.valide {
+      background-color: rgb(37, 161, 89);
+      color: #fff;
+    }
+    strong {
+      display: block;
+      font-weight: 700;
+      margin-top: 30px;
+    }
+  }
+}
