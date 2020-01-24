@@ -124,7 +124,7 @@ class Form extends Component {
             />
           </label>
           <label htmlFor="user_token">
-            User Acess Token
+            User Access Token or Page Access Token
             <input
               type="text"
               id="user_token"
