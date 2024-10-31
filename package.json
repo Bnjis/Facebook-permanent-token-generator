@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://Bnjis.github.io/Facebook-permanent-token-generator",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "gh-pages": "^2.0.1",
     "node-sass": "^7.0.0",
     "react": "^16.8.4",
