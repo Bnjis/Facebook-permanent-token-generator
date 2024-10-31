@@ -6,7 +6,7 @@
   "dependencies": {
     "axios": "^0.21.2",
     "gh-pages": "^2.0.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.8"
